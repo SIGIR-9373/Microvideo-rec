@@ -68,6 +68,7 @@ class CliprecDataset(Dataset):
                  clip_label.append(0 if ratio<(i+1)/self.ensemble_n_clips else 1)
             '''
 
+            
         #vid_frm_array = self._load_video(vid_id)
         #print(vid_id)
         clip_feature = torch.tensor(np.load('./fast_video_feature/'+str(int(vid_id))+'.npy'))
