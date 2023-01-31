@@ -18,6 +18,7 @@ from tqdm import tqdm
 from scipy.sparse import csr_matrix
 from scipy import sparse
 
+
 def logloss_cal(label,prediction):
     #loss = -np.mean(np.multiply(label,np.log2(prediction+0.00005)))-np.mean(np.multiply(1-label,np.log2(1-prediction+0.00005)))
     loss = -np.mean(np.multiply(label,np.log(prediction+0.00005)))-np.mean(np.multiply(1-label,np.log(1-prediction+0.00005)))
