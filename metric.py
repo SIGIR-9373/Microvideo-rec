@@ -1,4 +1,5 @@
 import numpy as np
+
 def metric_cal(ground_truth,k): 
     user_watch={}
     K = k
