@@ -12,6 +12,7 @@ import math
 import csv
 import torch.nn.functional as F
 
+
 class Cliprec(nn.Module):
     def __init__(self,clip_em,pos_A,neg_A,u_num,video_num,total_u_id_list,total_v_id_list,step_train=True):
         super(Cliprec, self).__init__()
